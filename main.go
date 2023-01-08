@@ -14,7 +14,12 @@ func main() {
     accountDataGen.Init()
 
     // Generate data
-	data := accountDataGen.GenerateData_Garbage(100, 0.65)
+//	data := accountDataGen.GenerateData_Garbage(100, 0.65)
+    data := accountDataGen.GenerateData_Basic(5000, 0.65)
+
+    for i:=0; i<5; i++ {
+        data[i].Print()
+    }
 
     // Encode and write to CSV
 	enc := struct2csv.New()

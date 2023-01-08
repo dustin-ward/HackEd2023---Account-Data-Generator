@@ -19,7 +19,7 @@ func GenerateData_Garbage(size int, split float64) []AccountData {
 		d.NumAccounts = rng.Intn(10)
 		d.AvgAccountValue = fmt.Sprintf("%.2f", rng.Float32()*1000000)
 		d.AvgCreditRate = fmt.Sprintf("%.2f", rng.Float32()*50)
-		d.AvgInestmentRate = fmt.Sprintf("%.2f", rng.Float32()*50)
+		d.AvgInvestmentRate = fmt.Sprintf("%.2f", rng.Float32()*50)
 		d.NetWorth = fmt.Sprintf("%.2f", rng.Float32()*2000000)
 		d.TotalLiabilities = fmt.Sprintf("%.2f", rng.Float32()*200000)
 		d.CreditScore = rng.Intn(999-300) + 300
