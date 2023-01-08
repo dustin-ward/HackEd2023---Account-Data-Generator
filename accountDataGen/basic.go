@@ -100,8 +100,8 @@ func (d *AccountData) determineActive() {
         sum += 0.9
     }
 
-
-    if sum > 1.0 {
+    temp := rand.Float32()
+    if sum > 1.0 && temp > 0.35{
         d.AccountActive = "0.0"
     } else {
         d.AccountActive = "1.0"
